@@ -3,7 +3,7 @@ RUN apt-get update
 WORKDIR /usr/src/client
 COPY package.json ./
 COPY package-lock.json ./
-RUN npm install --network-timeout 100000
+RUN yarn install --network-timeout 100000
 COPY . .
-RUN npm run build
-CMD ["npm", "start"]
+RUN yarn build
+CMD ["yarn", "start"]
