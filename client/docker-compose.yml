@@ -4,6 +4,6 @@ services:
         build:
             context: .
         ports:
-            - 3000:4007
+            - 4007:3000
         restart: always
         command: yarn start
