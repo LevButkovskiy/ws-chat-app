@@ -3,7 +3,7 @@ services:
     server:
         build:
             context: .
-            dockerfile: Dockerfile
         ports:
             - 3001:3001
         restart: always
+        command: yarn start
